@@ -73,7 +73,7 @@ for _ in range(args.runs):
     max_len = 512
 
     dataset = load_dataset(
-        "csv", data_files="/home/michele.maggini/PORRO_2/PORRO69_to_release.csv"
+        "csv", data_files="PATH/FILE.csv"
     )
     dataset = dataset["train"].train_test_split(test_size=0.2, seed=42)
     print(dataset)
