@@ -33,8 +33,8 @@ print(args)
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 wandb.init(
-    project="PORRO",
-    entity="michelej-m",
+    project="",
+    entity="",
     name=args.model_name.split("/")[1],
 )
 wandb.log({"num_runs": args.runs})
