@@ -150,7 +150,7 @@ Presentare una situazione come se avesse solo due alternative quando in realtà 
                         {"role": "user", "content": prompt.split("Ecco il testo da analizzare:")[1].strip()}
                     ],
                     max_tokens=1000,
-                    temperature=0.2,
+                    temperature=0.0,
                 )
 
                 return completion.choices[0].message.content
